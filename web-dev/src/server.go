@@ -89,7 +89,7 @@ func (s *s) Start() bool {
 
 	r := mux.NewRouter()
 	var err error
-	db, err = sql.Open("mysql", Configs.FormatDSN())
+	db, err = sql.Open(os.Getenv("DBDRIVER"), Configs.FormatDSN())
 	if err != nil {
 		log.Fatal(err)
 	}

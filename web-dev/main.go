@@ -12,7 +12,7 @@ func main(){
 
 func init() {
 	os.Setenv("DBDRIVER", "mysql")
-	os.Setenv("USERDB", "ignfed")
+	os.Setenv("USERDB", "root")
 	os.Setenv("PASSDB", "")
 	os.Setenv("DBNAME", "recordings")
 }
